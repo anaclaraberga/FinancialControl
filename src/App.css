@@ -1,0 +1,101 @@
+#root {
+  min-width: 100%;
+  min-height: 100dvh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 15rem;
+  height: 100%;
+
+  padding: 2.5rem 0.75rem 2.5rem 0.75rem;
+
+  border-right: 0.05rem solid #7f74a1;
+}
+
+.sidebar-header {
+  width: 100%;
+
+  margin-bottom: 16px;
+}
+
+.profile-img {
+  width: 35px;
+  min-height: 35px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  transition: transform 0.4s;
+}
+
+.profile-img:hover {
+  transform: scale(1.5);
+}
+
+.sidebar button {
+  height: 2.5rem;
+}
+
+#table-body {
+  width: fit-content;
+  min-height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 5rem;
+}
+
+#table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: auto;
+  
+  margin: 1rem;
+  padding: 1rem;
+
+  background: rgba(91, 86, 129, 0.2);
+
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: rgba(91, 86, 129, 0.2);
+}
+
+#table td, #table th {
+
+  justify-content: space-between;
+
+  padding: 0rem 1rem 0rem 1rem;
+
+  text-align: justify;
+
+}
+
+#table th {
+  color: #a29eae;
+  font-weight: 300;
+}
+
+#table td {
+
+  color: #ededed;
+
+  font-weight: 500;
+  font-size: 18px;
+}
