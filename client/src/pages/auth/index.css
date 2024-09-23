@@ -1,0 +1,17 @@
+.sign-in-container button {
+    min-height: 3rem;
+    min-width: fit-content;
+
+    padding: 0rem 2rem 0rem 2rem;
+
+    border-radius: 1rem;
+    border-style: none;
+    
+    background-color: #4c4fad;
+    color: white;
+    font-size: medium;
+    font-weight: 400;
+    position: relative;
+
+    transition: all 0.1s linear 0.1s;
+}
