@@ -17,7 +17,7 @@
   border-radius: 1rem;
   border-style: none;
   
-  background-color: #6b9837;
+  background-color: #4c4fad;
   color: white;
   font-size: x-large;
   font-weight: 500;
@@ -58,11 +58,11 @@
   margin: 1rem;
   padding: 1rem;
 
-  background: rgba(91, 86, 129, 0.2);
+  background: rgba(255, 255, 255);
 
   border-radius: 0.5rem;
   border-style: solid;
-  border-color: rgba(91, 86, 129, 0.2);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 #table td, #table th {
@@ -74,14 +74,11 @@
 }
 
 #table th {
-  color: #a29eae;
+  color: #808080;
   font-weight: 300;
 }
 
 #table td {
-
-  color: #ededed;
-
   font-weight: 500;
   font-size: 18px;
 }

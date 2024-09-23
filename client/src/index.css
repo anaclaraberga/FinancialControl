@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  color: #3f3f3f;
 }
 
 :root {
@@ -17,11 +19,11 @@
 }
 
 body {
-  background-color: rgb(27, 24, 42);
+  background-color: rgb(242, 242, 242);
 }
 
 h1, h2 {
-  color: #ededed;
+  color: #3f3f3f;
 }
 
 h1 {
@@ -32,5 +34,4 @@ h1 {
 h2 {
   font-size: 1rem;
   font-weight: 400;
-  color: #ededed;
 }
