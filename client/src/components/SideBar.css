@@ -1,0 +1,53 @@
+#sidebar {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    min-height: 100dvh;
+  
+    top: 0;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+    width: 15rem;
+    height: 100%;
+  
+    padding: 2.5rem 0.75rem 2.5rem 0.75rem;
+  
+    border-right: 0.05rem solid #7f74a1;
+}
+  
+.sidebar-header {
+    width: 100%;
+  
+    margin-bottom: 16px;
+}
+  
+.profile-img {
+    width: 35px;
+    min-height: 35px;
+  
+    border-radius: 50%;
+  
+    object-fit: cover;
+  
+    transition: transform 0.4s;
+}
+  
+.profile-img:hover {
+    transform: scale(1.5);
+}
+  
+#sidebar a {
+    text-decoration: none;
+    
+    font: inherit;
+    color: white;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    width: 12rem;
+    height: 2.5rem;
+}

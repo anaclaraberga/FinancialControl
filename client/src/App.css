@@ -3,54 +3,41 @@
   min-height: 100dvh;
 
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-
 }
 
-.sidebar {
+.button-secondary {
+  min-height: 4rem;
+  min-width: fit-content;
+
+  padding: 0rem 3rem 0rem 3rem;
+
+  border-radius: 1rem;
+  border-style: none;
+  
+  background-color: #6b9837;
+  color: white;
+  font-size: x-large;
+  font-weight: 500;
   position: fixed;
-  top: 0;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  bottom: 40px;
+  right: 40px;
 
-  width: 15rem;
-  height: 100%;
-
-  padding: 2.5rem 0.75rem 2.5rem 0.75rem;
-
-  border-right: 0.05rem solid #7f74a1;
+  transition: all 0.1s linear 0.1s;
 }
 
-.sidebar-header {
+.button-secondary:hover {
+
+  box-shadow: rgba(67, 39, 85, 0.2) 0px 7px 7px 0px;
+  transform: scale(1.1);
+  
+}
+
+#body {
   width: 100%;
-
-  margin-bottom: 16px;
-}
-
-.profile-img {
-  width: 35px;
-  min-height: 35px;
-
-  border-radius: 50%;
-
-  object-fit: cover;
-
-  transition: transform 0.4s;
-}
-
-.profile-img:hover {
-  transform: scale(1.5);
-}
-
-.sidebar button {
-  height: 2.5rem;
-}
-
-#table-body {
-  width: fit-content;
   min-height: 100dvh;
 
   display: flex;
@@ -63,6 +50,7 @@
 #table {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 
   min-width: auto;
@@ -79,9 +67,7 @@
 
 #table td, #table th {
 
-  justify-content: space-between;
-
-  padding: 0rem 1rem 0rem 1rem;
+  min-width: 8rem;
 
   text-align: justify;
 
@@ -98,4 +84,11 @@
 
   font-weight: 500;
   font-size: 18px;
+}
+
+#primary-row, #data-row {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
 }
