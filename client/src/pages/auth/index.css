@@ -4,7 +4,7 @@
 
     padding: 0rem 2rem 0rem 2rem;
 
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border-style: none;
     
     background-color: #4c4fad;
@@ -14,4 +14,34 @@
     position: relative;
 
     transition: all 0.1s linear 0.1s;
+}
+
+.sign-in-container {
+    width: 100%;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.button-alignment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.text-alignment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }

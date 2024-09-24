@@ -1,0 +1,38 @@
+#about-the-application {
+    width: 50rem;
+
+    text-align: center;
+}
+
+#about-the-application h1 {
+    
+    font-weight: 600;
+    font-size: 5rem;
+}
+
+#about-the-application p {
+    width: fit-content;
+}
+
+#about-the-application h2 {
+    font-weight: 500;
+}
+
+.content-application-body {
+    width: 100%;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-about-the-application {
+    padding: 2rem;
+}
+
+.marked {
+    font-weight: 600;
+    color: var(--primary-color);
+}

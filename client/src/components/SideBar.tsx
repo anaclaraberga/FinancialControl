@@ -1,18 +1,27 @@
+import { Link } from 'react-router-dom'
 import './SideBar.css'
+import { SignedIn, UserButton, useUser } from '@clerk/clerk-react'
 
 export default function SideBar() {
+    const { user } = useUser();
+    
     return(
         <>
 
         <aside id="sidebar">
             <header className="sidebar-header">
 
-                <img className="profile-img" src="https://dy7glz37jgl0b.cloudfront.net/advice/images/3f64195ec17bf2d488a315987f4861e5-woman-smiles-while-crossing-the-street-in-a-city_l.jpg" alt="Profile Photo"/>
-                <h2>Personal Expense Control</h2>
+                <SignedIn>
+                    <UserButton />
+                </SignedIn>
+
+                <p className='welcome-user'> Olá {user?.firstName}!</p>
 
             </header>
 
-            <nav>
+            <div className='division-container'></div>
+
+            <nav className='sidebar-links'>
                 <a href='/'>
                     <span>
                         <i className="material-symbols-outlined">home</i>
@@ -21,11 +30,19 @@ export default function SideBar() {
                     </span>
                 </a>
 
-                <a href='/'>
+                <a href='/about-the-application'>
                     <span>
                         <i className="material-symbols-outlined">upload_file</i>
 
-                        <span>Sobre mim</span>
+                        <span>Conheça a Financial Control</span>
+                    </span>
+                </a>
+
+                <a href='/about-me'>
+                    <span>
+                        <i className="material-symbols-outlined">developer_guide</i>
+
+                        <span>Sobre o desenvolvedor</span>
                     </span>
                 </a>
             </nav>

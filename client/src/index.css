@@ -16,22 +16,24 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --background-color: #F8F8F8;
+    --text-color: #404347;
+    --second-text-color: #7F7F7F;
+    --light-text-color: #FFF;
+    --light-gray: #F8F8F8;
+    --primary-color: #1974be;
+    --secondary-color: #6bb2ec;
+    --alternative-color: #3342a6;
 }
 
 body {
+  width: 100%;
+  height: 100dvh;
+  
   background-color: rgb(242, 242, 242);
 }
 
 h1, h2 {
   color: #3f3f3f;
-}
-
-h1 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 1rem;
-  font-weight: 400;
 }
