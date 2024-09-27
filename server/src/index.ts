@@ -2,6 +2,7 @@ import express, { Express } from "express";
 import mongoose from "mongoose";
 import financialRecordRouter from "./routes/financial-records";
 import cors from "cors";
+import 'dotenv/config'
 
 const app: Express = express();
 const port = process.env.PORT || 3001;
@@ -10,7 +11,9 @@ app.use(express.json());
 app.use(cors());
 
 const mongoURI: string =
-    "mongodb+srv://ana4ewbr:K6E4L3Gouw0f4KtU@financialcontrol.at7gi.mongodb.net/";
+    process.env.MONGO_DB_URL || "";
+
+console.log(process.env)
 
 mongoose
     .connect(mongoURI)

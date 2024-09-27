@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import './SideBar.css'
 import { SignedIn, UserButton, useUser } from '@clerk/clerk-react'
 
