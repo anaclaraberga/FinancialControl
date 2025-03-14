@@ -1,8 +1,15 @@
-import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton} from '@clerk/clerk-react'
+import { SignedOut, SignInButton, SignUpButton, useUser } from '@clerk/clerk-react'
+import { Navigate} from 'react-router'
 
 import './index.css'
 
 export const Auth = () => {
+    const { isSignedIn } = useUser()
+
+    if(isSignedIn) {
+        return <Navigate to="/dashboard" replace />;
+    }
+
     return <>
         <div className='sign-in-container'>
 
@@ -18,9 +25,6 @@ export const Auth = () => {
                 </SignedOut>
             </div>
 
-            <SignedIn>
-                <UserButton />
-            </SignedIn>
         </div>;
     </>
 }

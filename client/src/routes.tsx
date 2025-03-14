@@ -8,13 +8,14 @@ import { FinancialRecordsProvider } from './contexts/financial-record-context'
 import SideBar from './components/SideBar'
 import { AboutTheApplication } from './pages/about-the-application'
 
-function App() {
+function routes() {
 
   return (
     <Router>
-      <div id='body'>
-        <Routes>
-          <Route path='/' element={
+      <Routes>
+          <Route path='/' element={<Auth />}/>
+
+          <Route path='/dashboard' element={
               <FinancialRecordsProvider>
                 <div id='general-body'>
                   <SideBar/>
@@ -23,22 +24,24 @@ function App() {
               </FinancialRecordsProvider>
             }
           />
+
           <Route path='/auth' element={<Auth />}/>
+
           <Route path='/about-the-application' element={
             <div id='general-body'>
               <AboutTheApplication />
             </div>
           }
           />
+          
           <Route path='/about-me' element={
             <div id='general-body'>
               <AboutMe />
             </div>
           }/>
         </Routes>
-      </div>
     </Router>
   )
 }
 
-export default App
+export default routes
