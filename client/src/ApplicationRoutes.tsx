@@ -5,10 +5,11 @@ import { Dashboard } from './pages/dashboard'
 import { Auth } from './pages/auth'
 import { AboutMe } from './pages/about-me'
 import { FinancialRecordsProvider } from './contexts/financial-record-context'
-import SideBar from './components/SideBar'
 import { AboutTheApplication } from './pages/about-the-application'
 
-function routes() {
+import SideBar from './components/SideBar'
+
+function ApplicationRoutes() {
 
   return (
     <Router>
@@ -44,4 +45,4 @@ function routes() {
   )
 }
 
-export default routes
+export default ApplicationRoutes

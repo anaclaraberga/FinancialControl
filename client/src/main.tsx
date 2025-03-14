@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import Routes from './Routes'
+import Routes from './ApplicationRoutes.tsx'
 import './index.css';
 import { ClerkProvider } from "@clerk/clerk-react";
 
